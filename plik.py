@@ -21,7 +21,9 @@ lista_wyst =[] # przechowuje liste z występowaniem zapytania w konkretnym numer
 for el in range(len(szukane)):
   for doc in range (len(lista_dokumentow)):
       if szukane[el -1] in lista_dokumentow[doc -1]:
-        lista_wyst.append(doc)
+        lista_wyst.append(doc + 1)
       else:
         pass
+ 
+for wyn in range(len(szukane)):
   print(lista_wyst)
