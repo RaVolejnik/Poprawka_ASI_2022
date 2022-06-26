@@ -15,3 +15,13 @@ print("podaj liczbe zapytań do przetworzenia")
 m = input()
 print("podaj zapytania rozdzielone przecinkami")
 zapyt = input()
+
+szukane = zapyt.split(",") # lista z zapytaniami
+lista_wyst =[] # przechowuje liste z występowaniem zapytania w konkretnym numerze dokumentu 
+for el in range(len(szukane)):
+  for doc in range (len(lista_dokumentow)):
+      if szukane[el -1] in lista_dokumentow[doc -1]:
+        lista_wyst.append(doc)
+      else:
+        pass
+  print(lista_wyst)
